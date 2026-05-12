@@ -49,6 +49,31 @@ The system follows a modern microservices architecture with the following compon
 4. **AI Processing**: LangChain for document processing and question answering
 5. **Web Scraping**: BeautifulSoup4 for content extraction
 
+## 📁 Project Structure
+
+```text
+KnowBaseRAG/
+├── backend/                   # FastAPI backend service
+│   ├── app/
+│   │   ├── main.py            # FastAPI entry point and routes
+│   │   ├── models/            # Pydantic data models
+│   │   ├── routes/            # API endpoints (modularized)
+│   │   ├── services/          # Business logic
+│   │   │   ├── llm_service.py         # LLM integration
+│   │   │   ├── nlp_service.py         # Text cleaning and chunking
+│   │   │   ├── scraping_service.py    # Web content extraction
+│   │   │   └── vector_store_service.py# ChromaDB integration
+│   │   └── utils/             # Helper functions
+│   ├── chroma_db/             # Local vector database storage
+│   └── requirements.txt       # Backend dependencies
+├── frontend/                  # Streamlit web interface
+│   └── streamlit_app.py       # Main UI application
+├── data/                      # Sample data and evaluation sets
+├── notebooks/                 # Jupyter notebooks for experimentation
+├── LICENSE                    # MIT License
+└── README.md                  # Project documentation
+```
+
 ## 🛠️ Tech Stack
 
 ### Backend
