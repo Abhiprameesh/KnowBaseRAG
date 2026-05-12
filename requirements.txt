@@ -9,3 +9,4 @@ chromadb
 sentence-transformers
 langchain
 langchain-text-splitters
+streamlit
